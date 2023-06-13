@@ -1,3 +1,4 @@
+#README
 wstęp
 
 Projekt ten ma na celu stworzenie gry polegającej na przeskakiwaniu przeszkód.
@@ -32,53 +33,53 @@ kompilator C++ jest instalowany w pakiecie z Visual studio które można łatwo 
   
   
 
-![](dokumentacja/1.png)
+![](Dokumentacja/1.png)
 
 Funkcja void wczytująca dane z poprzednich sesji pozwala na przechowywanie wyników po zamknięciu aplikacji.
 
-![](dokumentacja/2.png)
+![](Dokumentacja/2.png)
 
 Funkcja void która wczytuje ostatnie 10 zapisanych wyników punktowych do pliku w celu zapisania danych.
 
-![](dokumentacja/3.png)
+![](Dokumentacja/3.png)
 
 Struktura pozwalająca na przełączanie zawartości okna (menu,rozgrywka,oraz tablica wyników) podczas korzystania z aplikacji.
 
-![](dokumentacja/4.png)
+![](Dokumentacja/4.png)
 
 Obsługa zdarzenia naciśnięcia klawisza S powodującego przeniesienie do rozgrywki.
 
-![](dokumentacja/5.png)
+![](Dokumentacja/5.png)
 
 Obsługa klawisza T który przenosi do tablicy wyników z aktualizacją wyników (szczytuje z kolejki oraz zapisuje w tablicy).
 
-![](dokumentacja/6.png)
+![](Dokumentacja/6.png)
 
 Obsługa klawisza M który przenosi do ekranu tytułowego gry.
 
-![](dokumentacja/7.png)
+![](Dokumentacja/7.png)
 
 obsługa restartu przypisanego do klawisza R pozwala na zresetowanie gry po porażce usuwa również wszystkie elementy z kontenera przechowującego przeszkody oraz ustawia wszystkie zmienne wykorzystywane w grze na początkowe wartości.
 
-![](dokumentacja/8.png)
+![](Dokumentacja/8.png)
 
 Usuwanie przeszkód które są poza wyświetlaną częścią ekranu w celu rozwiązania problemu ewentualnego wycieku pamięci.
 
-![](dokumentacja/10.png)
+![](Dokumentacja/10.png)
 
 Obsługa skoku awatara gracza zawiera prostą grawitację oraz warunek sprawdzający czy skok jest dozwolony.
 
-![](dokumentacja/9.png)
+![](Dokumentacja/9.png)
 
 Ten fragment kodu jest odpowiedzialny za generowanie nowych przeszkód w określonym interwale czasowym, jeśli liczba przeszkód nie przekracza maksymalnej wartości. Każda przeszkoda ma losową prędkość, oraz losowo przydzielaną teksture.
 
-![](dokumentacja/11.png)
+![](Dokumentacja/11.png)
 
 fragment kodu odpowiadający za zapisywanie wyniku do pliku tekstowego.
 
 Panda Run
 
-![](dokumentacja/13.png) ![](dokumentacja/12.png) ![](dokumentacja/14.png)
+![](Dokumentacja/13.png) ![](Dokumentacja/12.png) ![](Dokumentacja/14.png)
 
 Gra polega na przeskakiwaniu przeszkód które panda napotyka podczas biegu w celu skoku należy nacisnąć spację jeżeli nie uda nam się przeskoczyć elementu możemy zobaczyć swój wyniki oraz rozpocząć gre ponownie naciskająć klawisz R.
 
