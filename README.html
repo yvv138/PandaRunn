@@ -1,0 +1,68 @@
+#readme 
+<p><span style="font-weight: 400;">wstęp</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Projekt ten ma na celu stworzenie gry polegającej na przeskakiwaniu przeszkód.</span></p>
+<p><span style="font-weight: 400;">w projekcie wykorzystano język programowania C++ oraz bibliotekę SFML.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Instalacja</span></p>
+<p><span style="font-weight: 400;">aby skompilować kod źr&oacute;dłowy potrzebujemy kompilatora C++ oraz skonfigurowanej biblioteki SFML.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">w zależności od wybranego środowiska konfiguracja może się r&oacute;żnić poniżej instalacja dla Visual Studio:</span></p>
+<p>&nbsp;</p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Pobierz bibliotekę SFML ze strony oficjalnej:</span><a href="https://www.sfml-dev.org/download.php"> <span style="font-weight: 400;">https://www.sfml-dev.org/download.php</span></a><span style="font-weight: 400;"> Wybierz wersję biblioteki, kt&oacute;ra odpowiada Twojej wersji Visual Studio (na przykład, jeśli używasz Visual Studio 2019, pobierz odpowiednią wersję dla tej wersji)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">W projekcie kliknij prawym przyciskiem myszy na nazwę projektu w eksploratorze rozwiązań i wybierz opcję "Właściwości".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">W oknie właściwości projektu przejdź do sekcji "Konfiguracje właściwości" i wybierz "Wszystkie konfiguracje" oraz "Wszystkie platformy" (jeśli masz kilka konfiguracji i platform).</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Wybierz "C/C++" w lewym panelu i kliknij na "Og&oacute;lne".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Edytuj pole "Dodatkowe katalogi zawierające pliki nagł&oacute;wkowe" (Additional Include Directories) i dodaj ścieżkę do katalogu zawierającego nagł&oacute;wki SFML, kt&oacute;re zostały rozpakowane. Na przykład, jeśli rozpakowałeś SFML do "C:\SFML", to dodaj "C:\SFML\include" jako ścieżkę.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Następnie, wciąż w sekcji "C/C++", wybierz "Kompilator" i kliknij na "Zaawansowane".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">W polu "Zestawienie kodowania znak&oacute;w" (Character Set) wybierz "Unicode".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Wybierz "Linker" w lewym panelu i kliknij na "Og&oacute;lne".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Edytuj pole "Dodatkowe katalogi bibliotek" (Additional Library Directories) i dodaj ścieżkę do katalogu zawierającego biblioteki SFML. Na przykład, jeśli rozpakowałeś SFML do "C:\SFML", to dodaj "C:\SFML\lib" jako ścieżkę.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Wciąż w sekcji "Linker", wybierz "Wejście" (Input).</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Kliknij na "Dodatkowe zależności" (Additional Dependencies) i dodaj nazwy bibliotek SFML, kt&oacute;rych potrzebujesz w swoim projekcie. Na przykład, jeśli używasz SFML dla grafiki 2D, dodaj "sfml-graphics.lib", "sfml-window.lib" i "sfml-system.lib".</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Teraz możesz użyć funkcji i klas z biblioteki SFML w swoim projekcie. Upewnij się, że dodajesz odpowiednie dyrektywy preprocesora i includujesz nagł&oacute;wki SFML w swoim kodzie.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Skompiluj i uruchom projekt. Jeśli wszystko zostało poprawnie skonfigurowane, powinieneś m&oacute;c skompilować i uruchomić aplikację korzystającą z SFML w Visual Studio.</span></li>
+</ol>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">kompilator C++ jest instalowany w pakiecie z Visual studio kt&oacute;re można łatwo zainstalować dzięki graficznemu interfejsowi.</span></p>
+<p><br /><br /></p>
+<img src="dokumentacja/1.png">
+<p><span style="font-weight: 400;">Funkcja void wczytująca dane z poprzednich sesji pozwala na przechowywanie wynik&oacute;w po zamknięciu aplikacji.</span></p>
+<p>&nbsp;</p>
+<img src="dokumentacja/2.png">
+<p><span style="font-weight: 400;">Funkcja void kt&oacute;ra wczytuje ostatnie 10 zapisanych wynik&oacute;w punktowych do pliku w celu zapisania danych.</span></p>
+<img src="dokumentacja/3.png">
+<p><span style="font-weight: 400;">Struktura pozwalająca na przełączanie zawartości okna (menu,rozgrywka,oraz tablica wynik&oacute;w) podczas korzystania z aplikacji.</span></p>
+<img src="dokumentacja/4.png">
+<p><span style="font-weight: 400;">Obsługa zdarzenia naciśnięcia klawisza S powodującego przeniesienie do rozgrywki.</span></p>
+<img src="dokumentacja/5.png">
+<p><span style="font-weight: 400;">Obsługa klawisza T kt&oacute;ry przenosi do tablicy wynik&oacute;w z aktualizacją wynik&oacute;w (szczytuje z kolejki oraz zapisuje w tablicy).</span></p>
+<img src="dokumentacja/6.png">
+<p><span style="font-weight: 400;">Obsługa klawisza M kt&oacute;ry przenosi do ekranu tytułowego gry.</span></p>
+<img src="dokumentacja/7.png">
+<p><span style="font-weight: 400;">obsługa restartu przypisanego do klawisza R pozwala na zresetowanie gry po porażce usuwa r&oacute;wnież wszystkie elementy z kontenera przechowującego przeszkody oraz ustawia wszystkie zmienne wykorzystywane w grze na początkowe wartości.</span></p>
+<img src="dokumentacja/8.png">
+<p><span style="font-weight: 400;">Usuwanie przeszk&oacute;d kt&oacute;re są poza wyświetlaną częścią ekranu w celu rozwiązania problemu ewentualnego wycieku pamięci.</span></p>
+<img src="dokumentacja/10.png">
+<p><span style="font-weight: 400;">
+    Obsługa skoku awatara gracza zawiera prostą grawitację oraz warunek sprawdzający czy skok jest dozwolony.
+    </span></p>
+<img src="dokumentacja/9.png">
+<p><span style="font-weight: 400;">Ten fragment kodu jest odpowiedzialny za generowanie nowych przeszk&oacute;d w określonym interwale czasowym, jeśli liczba przeszk&oacute;d nie przekracza maksymalnej wartości. Każda przeszkoda ma losową prędkość, oraz losowo przydzielaną teksture.</span></p>
+<img src="dokumentacja/11.png">
+<p><span style="font-weight: 400;">fragment kodu odpowiadający za zapisywanie wyniku do pliku tekstowego.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Panda Run</span></p>
+<img src="dokumentacja/13.png">
+<img src="dokumentacja/12.png">
+<img src="dokumentacja/14.png">
+<p><span style="font-weight: 400;">Gra polega na przeskakiwaniu przeszk&oacute;d kt&oacute;re panda napotyka podczas biegu w celu skoku należy nacisnąć spację jeżeli nie uda nam się przeskoczyć elementu możemy zobaczyć sw&oacute;j wyniki oraz rozpocząć gre ponownie naciskająć klawisz R.</span></p>
+<p><span style="font-weight: 400;">gra posiada międzysesyjną tablice wynik&oacute;w kt&oacute;ra pozwala zobaczyć ile punkt&oacute;w udało się zdobyć w 10 ostatnich podejściach .</span></p>
+<p><span style="font-weight: 400;">linki zewnętrzne </span></p>
+<p><span style="font-weight: 400;">poradnik instalacji sfml https://www.sfml-dev.org/tutorials/2.5/start-vc.php
+ </span></p>
+<p><span style="font-weight: 400;">Github https://github.com/yvv138/PandaRunn.git
+</span></p>
+
+<p>&nbsp;</p>
